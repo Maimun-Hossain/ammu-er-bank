@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ammu er Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-lime-300">
+    <header>
+        <h1 class="text-5xl text-center mt-52 font-bold text-indigo-500">Welcome To Your <span class="text-red-400">Ammu ER Bank</span>!!!</h1>
+    </header>
+    <main>
+        <div class="grid grid-cols-3 gap-8 w-3/4 mx-auto my-8">
+            <div class="bg-teal-400 text-center py-10 rounded-lg text-white">
+                <h3 class="text-2xl font-semibold">Deposit</h3>
+                <h1 class="text-5xl">$<span id="deposit-old-value">00</span></h1>
+            </div>
+            <div class="bg-teal-400 text-center py-10 rounded-lg text-white"">
+                <h3 class="text-2xl font-semibold">Withdraw</h3>
+                <h1 class="text-5xl">$<span id="withdraw-old-value">00</span></h1>
+            </div>
+            <div class="bg-teal-400 text-center py-10 rounded-lg text-white"">
+                <h3 class="text-2xl font-semibold">Balance</h3>
+                <h1 class="text-5xl">$<span id="Balance-old-value">1200</span></h1>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 w-3/4 mx-auto gap-8">
+            <div class="bg-teal-400 rounded-lg p-5">
+                <h3 class="text-2xl font-semibold text-white text-center">Please Deposit</h3>
+                <input class=" pl-10 w-1/2 block my-3 rounded-lg mx-auto" type="number" name="" id="deposit-input" placeholder="$ Amount want to Deposit">
+                <div class="flex justify-center">
+                    <button id="btn-deposit" class="bg-teal-500 hover:bg-green-300 text-white px-7 rounded-xl py-3">Deposit</button>
+                </div>
+            </div>
+            <div class="bg-teal-400 rounded-xl p-5">
+                <h3 class="text-2xl font-semibold text-white text-center">Please Withdraw</h3>
+                <input class=" pl-10 w-1/2 block my-3 rounded-lg mx-auto" type="number" name="" id="withdraw-input" placeholder="$ Amount want to Withdraw">
+                <div class="flex justify-center">
+                    <button id="btn-withdraw" class="bg-teal-500 hover:bg-green-300 text-white px-7 rounded-xl py-3">Withdraw</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/bank.js"></script>
+</body>
+</html>
